@@ -1,0 +1,50 @@
+@use "sass:map";
+
+// 色を変数登録
+$color-base: #F5F4F2;
+$color-main: #2F5D50;
+$color-main-light: #92B5A9;
+$color-accent: #B8962E;
+$color-text: #666666; // 通常テキスト
+$color-heading: #333333; // 見出し
+$color-footer-bg: #F4F4F1;
+
+
+// フォントサイズを変数登録
+$font-size-xs: 12px;
+$font-size-sm: 14px;
+$font-size-md: 16px;
+$font-size-lg: 20px;
+$font-size-xl: 32px;
+
+
+// 余白を変数登録
+$space-xxs: 8px;
+$space-xs: 16px;
+$space-sm: 24px;
+$space-md: 40px;
+$space-lg: 80px;
+$space-xl: 200px;
+
+$space-lg-sp: 60px;
+$space-xl-sp: 160px;
+
+
+// ブレイクポイントを変数&mixin登録
+$breakpoints: (
+    sm: 768px,
+);
+
+@mixin mq($size) {
+    @media (max-width: map.get($breakpoints, $size)) {
+        @content;
+    }
+}
+
+// ホバーエフェクト
+@mixin hover-opacity($opacity: 0.7) {
+  &:hover {
+    opacity: $opacity;
+  }
+}
+
