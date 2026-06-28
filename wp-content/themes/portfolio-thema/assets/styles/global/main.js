@@ -103,17 +103,20 @@ if (email) {
 const hamburger = document.querySelector('.js-hamburger');
 const drawer = document.querySelector('.js-drawer');
 const navLinks = document.querySelectorAll('.js-drawer a');
+const header = document.querySelector('header');
 
 if (hamburger && drawer) {
 
   const toggleMenu = () => {
     hamburger.classList.toggle('is-active');
     drawer.classList.toggle('is-open');
+    header.classList.toggle('is-open');
   };
 
   const closeMenu = () => {
     hamburger.classList.remove('is-active');
     drawer.classList.remove('is-open');
+    header.classList.remove('is-open');
   };
 
   // ハンバーガークリック
