@@ -2,3 +2,18 @@ node_modules/
 dist/
 *.wpress
 wp-content/ai1wm-backups/
+wp-config.php
+
+# WordPressコアファイル
+wp-*.php
+index.php
+readme.html
+license.txt
+xmlrpc.php
+local-xdebuginfo.php
+.htaccess
+
+# WordPressコアフォルダ
+wp-admin/
+wp-includes/
+assets/
