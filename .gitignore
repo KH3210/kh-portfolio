@@ -17,3 +17,6 @@ local-xdebuginfo.php
 wp-admin/
 wp-includes/
 assets/
+
+.vscode/
+wp-content/plugins/
