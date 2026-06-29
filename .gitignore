@@ -16,7 +16,7 @@ local-xdebuginfo.php
 # WordPressコアフォルダ
 wp-admin/
 wp-includes/
-assets/
+/assets/
 
 .vscode/
 wp-content/plugins/
